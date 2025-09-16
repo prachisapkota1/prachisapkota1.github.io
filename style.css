@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f5f2;
+}
+
+.header-bg {
+    background-color: #f7f5f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.straygoat-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #d1d5db; /* A lighter gray for hover */
+}
+
+.text-hero {
+    color: #2c2c2c;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .text-hero {
+        font-size: 4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .text-hero {
+        font-size: 5rem;
+    }
+}

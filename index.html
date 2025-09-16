@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straygoat - Technical Writer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#f5f5f5] py-6 px-4 md:px-12 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/48x48/f5f5f5/e25822?text=S" alt="Logo" class="rounded-full">
+            </div>
+            <div class="flex flex-col">
+                <a href="index.html" class="text-lg font-bold text-[#212121] hover:text-[#e25822] transition duration-300">Straygoat</a>
+                <span class="text-sm font-light text-gray-500">Freelance Technical Writer</span>
+            </div>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="index.html" class="text-base font-medium text-gray-700 hover:text-[#e25822] transition duration-300">About</a>
+            <a href="services.html" class="text-base font-medium text-gray-700 hover:text-[#e25822] transition duration-300">Services</a>
+            <a href="projects.html" class="text-base font-medium text-gray-700 hover:text-[#e25822] transition duration-300">Portfolio</a>
+            <a href="contact.html" class="text-base font-medium text-gray-700 hover:text-[#e25822] transition duration-300">Contact</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden text-[#212121] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </header>
+
+    <!-- Main Content - Hero Section -->
+    <main class="container mx-auto p-4 md:p-12">
+        <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 mt-12 md:mt-24">
+            <div>
+                <span class="text-[#e25822] font-semibold text-sm tracking-wide uppercase">Freelance Technical Writer</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight my-4">
+                    Technical writer for customer support content
+                </h1>
+                <p class="text-base lg:text-lg text-gray-700 leading-relaxed mb-6">
+                    Need better customer support content? I can help you. I'm an experienced technical writer and I specialize in creating content that works better for your customers and AI chatbots.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="services.html" class="inline-block bg-[#212121] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#e25822] transition duration-300">Services</a>
+                    <a href="#experience" class="inline-block bg-white text-[#212121] border border-gray-300 py-3 px-6 rounded-lg font-semibold hover:bg-gray-200 transition duration-300">Experience</a>
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-end">
+                <img src="https://placehold.co/400x400/dddddd/e25822?text=Your+Photo" alt="Your Profile Picture" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover shadow-xl">
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="mt-24 md:mt-32">
+            <h2 class="text-3xl font-bold text-[#212121] mb-8">About Me</h2>
+            <p class="text-base text-gray-700 leading-relaxed mb-6">
+                I am an emerging technical writer passionate about making complex information clear and accessible. I focus on translating complex technical concepts into user-friendly documentation, ensuring products are intuitive and accessible to everyone.
+            </p>
+            <ul class="list-disc list-inside text-base text-gray-700 leading-relaxed">
+                <li>I specialize in technical documentation (APIs, user guides, white papers).</li>
+                <li>I'm skilled in Information Architecture & Content Strategy.</li>
+                <li>I am proficient in editing & proofreading, ensuring high-quality content.</li>
+                <li>I have experience with Content Management Systems (CMS).</li>
+                <li>I am comfortable working with Markdown, HTML & CSS.</li>
+            </ul>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#212121] text-white text-center py-6 mt-24">
+        <div class="flex justify-center space-x-4 mb-2">
+            <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-[#e25822] transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.782 7 2.454v6.781z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub" class="text-gray-400 hover:text-[#e25822] transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.309 3.492 1.004.108-.777.42-1.309.762-1.605-2.665-.304-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.6.8.576 4.765-1.589 8.202-6.095 8.202-11.385 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-[#e25822] transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.161-10.14-5.129-1.29 2.21-2.65 4.68-1.258 6.045-.63-.197-1.229-.39-1.782-.614v.058c0 3.294 2.383 6.023 5.51 6.649-.441.121-.905.188-1.381.188-.354 0-.696-.035-1.033-.095.824 2.766 3.425 4.757 6.463 4.805-2.576 2.046-5.828 3.287-9.355 3.287-.603 0-1.193-.03-1.785-.093 3.18 2.038 6.911 3.236 10.999 3.236 13.565 0 22.016-11.154 22.016-22.016l-.001-.546c1.178-.857 2.193-1.912 3-3.15z"/></svg>
+            </a>
+        </div>
+        <p class="text-xs text-gray-500">&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

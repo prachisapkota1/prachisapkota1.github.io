@@ -1,19 +1,38 @@
- <header class="sticky top-0 z-50 bg-[#f5f5f5] py-6 px-4 md:px-12 flex items-center justify-between">
-    <div class="flex items-center space-x-4">
-        <div class="flex-shrink-0">
-            <img src="https://placehold.co/48x48/f5f5f5/e25822?text=S" alt="Logo" class="rounded-full">
+ <header class="sticky top-0 z-50 py-6 px-4 md:px-12 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/48x48/f5f5f2/e25822?text=P" alt="Logo" class="rounded-full">
+            </div>
+            <div class="flex flex-col">
+                <a href="../index.html" class="text-lg font-bold text-[#212121] hover:text-[#e25822] transition duration-300">Prachi Sapkota</a>
+                <span class="text-sm font-light text-gray-500">Technical Writer</span>
+            </div>
         </div>
-        <div class="flex flex-col">
-            <a href="index.html" class="text-lg font-bold text-[#212121] hover:text-[#e25822] transition duration-300">Prachi Sapkota</a>
-            <span class="text-sm font-light text-gray-500">Technical Writer</span>
+        <nav class="hidden md:flex space-x-2">
+            <a href="../index.html" class="text-base font-semibold text-gray-700 hover:bg-gray-200 px-4 py-2 rounded-full transition duration-300">About</a>
+            <a href="../projects.html" class="text-base font-semibold text-gray-700 hover:bg-gray-200 px-4 py-2 rounded-full transition duration-300">Portfolio</a>
+            <a href="../contact.html" class="text-base font-semibold text-gray-700 hover:bg-gray-200 px-4 py-2 rounded-full transition duration-300">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden text-[#212121] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-[#f5f5f5] shadow-lg p-4 transition-transform duration-300 ease-in-out">
+            <nav class="flex flex-col items-center space-y-2">
+                <a href="../index.html" class="w-full text-center text-lg font-semibold text-gray-700 hover:bg-gray-200 px-4 py-2 rounded-lg transition duration-300" onclick="document.getElementById('mobileMenu').classList.add('hidden');">About</a>
+                <a href="../projects.html" class="w-full text-center text-lg font-semibold text-gray-700 hover:bg-gray-200 px-4 py-2 rounded-lg transition duration-300" onclick="document.getElementById('mobileMenu').classList.add('hidden');">Portfolio</a>
+                <a href="../contact.html" class="w-full text-center text-lg font-semibold text-gray-700 hover:bg-gray-200 px-4 py-2 rounded-lg transition duration-300" onclick="document.getElementById('mobileMenu').classList.add('hidden');">Contact</a>
+            </nav>
         </div>
-    </div>
-    <nav class="hidden md:flex space-x-6">
-        <a href="index.html" class="text-base font-medium text-gray-700 hover:text-[#e25822] transition duration-300">About</a>
-        <a href="projects.html" class="text-base font-medium text-gray-700 hover:text-[#e25822] transition duration-300">Portfolio</a>
-        <a href="contact.html" class="text-base font-medium text-gray-700 hover:text-[#e25822] transition duration-300">Contact</a>
-    </nav>
-    <button id="mobileMenuBtn" class="md:hidden text-[#212121] focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-    </button>
-</header>
+    </header>
+
+
+
+
+
+
+    
+  

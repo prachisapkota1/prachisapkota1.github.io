@@ -32,6 +32,12 @@ body {
     line-height: 1.1;
 }
 
+
+.text-url {
+  color: blue;
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     .text-hero {
         font-size: 4rem;
